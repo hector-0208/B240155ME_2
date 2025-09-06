@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for proper display and responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - BusTravel</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation bar for site navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo that links back to welcome page -->
+            <a href="index.html" class="nav-logo">BusTravel</a>
+            <!-- Main navigation links -->
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="booking.html">Book Ticket</a></li>
+                <li><a href="bookings.html">My Bookings</a></li>
+                <li><a href="login.html">Account</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content area -->
+    <main class="main-content">
+        <!-- Page title -->
+        <h1 class="page-title">Sign In to Your Account</h1>
+
+        <!-- Login form container -->
+        <div class="form-container">
+            <!-- Login form with email and password -->
+            <form id="loginForm">
+                <!-- Email address field -->
+                <div class="form-group">
+                    <label for="loginEmail">Email Address:</label>
+                    <input type="email" id="loginEmail" name="loginEmail" placeholder="Enter your email address" required>
+                </div>
+
+                <!-- Password field -->
+                <div class="form-group">
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" name="loginPassword" placeholder="Enter your password" required>
+                </div>
+
+                <!-- Remember me checkbox -->
+                <div class="form-group" style="display: flex; align-items: center; gap: 10px;">
+                    <input type="checkbox" id="rememberMe" name="rememberMe">
+                    <label for="rememberMe" style="margin: 0;">Remember me on this device</label>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn-submit">Sign In</button>
+
+                <!-- Links for forgot password and signup -->
+                <div style="text-align: center; margin-top: 20px;">
+                    <p><a href="#" onclick="showForgotPasswordAlert()" style="color: #ff6b35; text-decoration: none;">Forgot your password?</a></p>
+                    <p>Don't have an account? 
+                        <a href="signup.html" style="color: #ff6b35; text-decoration: none; font-weight: bold;">Create Account</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <!-- Account features section -->
+        <section class="content-section">
+            <h2 class="section-title">Access Your Account</h2>
+            <p class="section-description">
+                Sign in to access your personalized dashboard where you can manage your bookings, 
+                view travel history, update your profile, and enjoy exclusive member benefits. 
+                Your account keeps all your travel information organized and easily accessible.
+            </p>
+            
+            <!-- Quick actions after login -->
+            <div class="services-container">
+                <div class="service-card">
+                    <div class="card-icon">🎫</div>
+                    <h3>Quick Booking</h3>
+                    <p>Book tickets faster with saved passenger details and preferences</p>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">📱</div>
+                    <h3>Mobile Tickets</h3>
+                    <p>Access your e-tickets instantly on your mobile device</p>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">💳</div>
+                    <h3>Payment Methods</h3>
+                    <p>Manage saved payment methods for convenient checkout</p>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">🔔</div>
+                    <h3>Travel Alerts</h3>
+                    <p>Get notified about trip updates, delays, and departure reminders</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript file for interactive functionality -->
+    <script src="script.js"></script>
+</body>
+</html>

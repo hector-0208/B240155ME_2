@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for proper display and responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - BusTravel</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation bar for site navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo that links back to welcome page -->
+            <a href="index.html" class="nav-logo">BusTravel</a>
+            <!-- Main navigation links -->
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="booking.html">Book Ticket</a></li>
+                <li><a href="bookings.html">My Bookings</a></li>
+                <li><a href="login.html">Account</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content area -->
+    <main class="main-content">
+        <!-- Page title -->
+        <h1 class="page-title">Create New Account</h1>
+
+        <!-- Signup form container -->
+        <div class="form-container">
+            <!-- Registration form with all required fields -->
+            <form id="signupForm">
+                <!-- Full name field -->
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                </div>
+
+                <!-- Email address field -->
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+
+                <!-- Phone number field -->
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <!-- Date of birth field -->
+                <div class="form-group">
+                    <label for="dateOfBirth">Date of Birth:</label>
+                    <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                </div>
+
+                <!-- Gender selection -->
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                        <option value="prefer-not-to-say">Prefer not to say</option>
+                    </select>
+                </div>
+
+                <!-- Password field -->
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Create a strong password" required>
+                </div>
+
+                <!-- Confirm password field -->
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn-submit">Create Account</button>
+
+                <!-- Link to login page -->
+                <div style="text-align: center; margin-top: 20px;">
+                    <p>Already have an account? 
+                        <a href="login.html" style="color: #ff6b35; text-decoration: none; font-weight: bold;">Sign In Here</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <!-- Information section about account benefits -->
+        <section class="content-section">
+            <h2 class="section-title">Why Create an Account?</h2>
+            <div class="services-container">
+                <!-- Benefits of creating account -->
+                <div class="service-card">
+                    <div class="card-icon">💾</div>
+                    <h3>Save Preferences</h3>
+                    <p>Store your favorite routes and passenger details for faster booking</p>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">📋</div>
+                    <h3>Track Bookings</h3>
+                    <p>View your complete travel history and manage upcoming trips</p>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">🎁</div>
+                    <h3>Special Offers</h3>
+                    <p>Get exclusive discounts and early access to promotional deals</p>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">🔔</div>
+                    <h3>Notifications</h3>
+                    <p>Receive updates about your bookings and travel reminders</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript file for interactive functionality -->
+    <script src="script.js"></script>
+</body>
+</html>

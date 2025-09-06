@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for proper display and responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Ticket - BusTravel</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation bar for site navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo that links back to welcome page -->
+            <a href="index.html" class="nav-logo">BusTravel</a>
+            <!-- Main navigation links -->
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="booking.html">Book Ticket</a></li>
+                <li><a href="bookings.html">My Bookings</a></li>
+                <li><a href="login.html">Account</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content area -->
+    <main class="main-content">
+        <!-- Page title -->
+        <h1 class="page-title">Book Your Bus Ticket</h1>
+
+        <!-- Booking form container -->
+        <div class="form-container">
+            <!-- Booking form with all required fields -->
+            <form id="bookingForm">
+                <!-- Source city selection -->
+                <div class="form-group">
+                    <label for="source">From (Source City):</label>
+                    <select id="source" name="source" required>
+                        <option value="">Select departure city</option>
+                        <!-- Popular cities for bus travel -->
+                        <option value="new-york">New York</option>
+                        <option value="los-angeles">Los Angeles</option>
+                        <option value="chicago">Chicago</option>
+                        <option value="houston">Houston</option>
+                        <option value="philadelphia">Philadelphia</option>
+                        <option value="phoenix">Phoenix</option>
+                        <option value="san-antonio">San Antonio</option>
+                        <option value="san-diego">San Diego</option>
+                        <option value="dallas">Dallas</option>
+                        <option value="san-jose">San Jose</option>
+                    </select>
+                </div>
+
+                <!-- Destination city selection -->
+                <div class="form-group">
+                    <label for="destination">To (Destination City):</label>
+                    <select id="destination" name="destination" required>
+                        <option value="">Select destination city</option>
+                        <!-- Same cities as source options -->
+                        <option value="new-york">New York</option>
+                        <option value="los-angeles">Los Angeles</option>
+                        <option value="chicago">Chicago</option>
+                        <option value="houston">Houston</option>
+                        <option value="philadelphia">Philadelphia</option>
+                        <option value="phoenix">Phoenix</option>
+                        <option value="san-antonio">San Antonio</option>
+                        <option value="san-diego">San Diego</option>
+                        <option value="dallas">Dallas</option>
+                        <option value="san-jose">San Jose</option>
+                    </select>
+                </div>
+
+                <!-- Travel date selection -->
+                <div class="form-group">
+                    <label for="travelDate">Travel Date:</label>
+                    <input type="date" id="travelDate" name="travelDate" required>
+                </div>
+
+                <!-- Number of passengers -->
+                <div class="form-group">
+                    <label for="passengers">Number of Passengers:</label>
+                    <select id="passengers" name="passengers" required>
+                        <option value="">Select passengers</option>
+                        <option value="1">1 Passenger</option>
+                        <option value="2">2 Passengers</option>
+                        <option value="3">3 Passengers</option>
+                        <option value="4">4 Passengers</option>
+                        <option value="5">5 Passengers</option>
+                        <option value="6">6+ Passengers</option>
+                    </select>
+                </div>
+
+                <!-- Passenger name field -->
+                <div class="form-group">
+                    <label for="passengerName">Passenger Name:</label>
+                    <input type="text" id="passengerName" name="passengerName" placeholder="Enter main passenger name" required>
+                </div>
+
+                <!-- Contact number field -->
+                <div class="form-group">
+                    <label for="contactNumber">Contact Number:</label>
+                    <input type="tel" id="contactNumber" name="contactNumber" placeholder="Enter contact number" required>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn-submit">Search Available Buses</button>
+            </form>
+        </div>
+
+        <!-- Information section about booking -->
+        <section class="content-section">
+            <h2 class="section-title">Booking Information</h2>
+            <p class="section-description">
+                Please fill in all the details above to search for available buses. Once you submit the form, 
+                you'll see available buses with different timings and prices. You can then select your preferred 
+                bus and complete the payment to confirm your booking.
+            </p>
+        </section>
+    </main>
+
+    <!-- JavaScript file for interactive functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
