@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for proper display and responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusTravel - Your Next Journey Awaits</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main welcome page container -->
+    <div class="welcome-container">
+        <!-- Header section with logo and navigation -->
+        <header class="header">
+            <!-- Logo section -->
+            <div class="logo">
+                <h2>BusTravel</h2>
+            </div>
+            <!-- Right side navigation buttons -->
+            <div class="header-buttons">
+                <button class="btn-secondary" onclick="navigateTo('login.html')">Sign In</button>
+                <button class="btn-primary" onclick="navigateTo('signup.html')">Sign Up</button>
+            </div>
+        </header>
+
+        <!-- Main hero section with background image effect -->
+        <main class="hero-section">
+            <!-- Content overlay on top of background -->
+            <div class="hero-content">
+                <!-- Main heading and description -->
+                <h1 class="hero-title">Welcome to Your Next Journey</h1>
+                <p class="hero-subtitle">
+                    Comfortable, budget-friendly buses and many routes to choose from.<br>
+                    Book your tickets and discover destinations that will create unforgettable memories!
+                </p>
+                <!-- Call to action button -->
+                <button class="btn-cta" onclick="navigateTo('home.html')">Start Your Journey</button>
+            </div>
+        </main>
+
+        <!-- Service cards section -->
+        <section class="services-preview">
+            <div class="services-container">
+                <!-- Individual service cards -->
+                <div class="service-card">
+                    <div class="card-icon">🚌</div>
+                    <h3>City Travel</h3>
+                    <p>Explore cities with our comfortable buses</p>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">🌄</div>
+                    <h3>Highway Routes</h3>
+                    <p>Long distance travel made comfortable</p>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">💺</div>
+                    <h3>Luxury Coaches</h3>
+                    <p>Premium seating for your comfort</p>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">👥</div>
+                    <h3>Group Travel</h3>
+                    <p>Special packages for group bookings</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- JavaScript file for interactive functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
