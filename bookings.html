@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags for proper display and responsiveness -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Bookings - BusTravel</title>
-    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation bar for site navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <!-- Logo that links back to welcome page -->
             <a href="index.html" class="nav-logo">BusTravel</a>
-            <!-- Main navigation links -->
             <ul class="nav-links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="booking.html">Book Ticket</a></li>
@@ -24,21 +19,16 @@
         </div>
     </nav>
 
-    <!-- Main content area -->
     <main class="main-content">
-        <!-- Page title -->
         <h1 class="page-title">My Travel History</h1>
 
-        <!-- Bookings table container -->
         <div class="content-section">
-            <!-- Table showing user's booking history -->
             <table class="bookings-table">
                 <thead>
                     <tr>
-                        <!-- Table headers for booking information -->
                         <th>Booking ID</th>
                         <th>Route</th>
-                        <th>Travel Date</th>
+                        <th>Date</th>
                         <th>Passengers</th>
                         <th>Status</th>
                         <th>Amount</th>
@@ -46,64 +36,36 @@
                     </tr>
                 </thead>
                 <tbody id="bookingsTableBody">
-                    <!-- Sample booking entries - in real app, this would be populated from database -->
                     <tr>
-                        <td>BT001</td>
-                        <td>New York → Los Angeles</td>
-                        <td>2024-12-15</td>
+                        <td>BT003</td>
+                        <td>New Delhi → Agra</td>
+                        <td>2025-2-5</td>
                         <td>2</td>
-                        <td><span style="color: #28a745; font-weight: bold;">Confirmed</span></td>
-                        <td>$180.00</td>
-                        <td>
-                            <button class="btn-secondary" onclick="viewBookingDetails('BT001')">View Details</button>
+                        <td><span style="color: #6c757d; font-weight: bold;">Completed</span></td>
+                        <td>Rs. 780.00</td>
                         </td>
                     </tr>
                     <tr>
                         <td>BT002</td>
-                        <td>Chicago → Dallas</td>
+                        <td>Gangtok → Siliguri</td>
+                        <td>2025-1-1</td>
+                        <td>3</td>
+                        <td><span style="color: #6c757d; font-weight: bold;">Completed</span></td>
+                        <td>Rs. 270.00</td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>BT001</td>
+                        <td>Patna → Siliguri</td>
                         <td>2024-11-28</td>
                         <td>1</td>
                         <td><span style="color: #6c757d; font-weight: bold;">Completed</span></td>
-                        <td>$95.00</td>
-                        <td>
-                            <button class="btn-secondary" onclick="viewBookingDetails('BT002')">View Details</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>BT003</td>
-                        <td>Houston → Phoenix</td>
-                        <td>2024-10-10</td>
-                        <td>3</td>
-                        <td><span style="color: #6c757d; font-weight: bold;">Completed</span></td>
-                        <td>$270.00</td>
-                        <td>
-                            <button class="btn-secondary" onclick="viewBookingDetails('BT003')">View Details</button>
-                        </td>
-                    </tr>
+                        <td>Rs. 399.00</td>
                 </tbody>
             </table>
         </div>
-
-        <!-- Information section about bookings -->
-        <section class="content-section">
-            <h2 class="section-title">Booking Management</h2>
-            <p class="section-description">
-                Here you can view all your past and upcoming bus bookings. You can see booking details, 
-                travel dates, passenger information, and booking status. For confirmed bookings, you can 
-                view or download your e-tickets. If you need to cancel or modify a booking, please contact 
-                our customer service team.
-            </p>
-            
-            <!-- Action buttons -->
-            <div style="text-align: center; margin-top: 30px;">
-                <button class="btn-submit" onclick="navigateTo('booking.html')" style="max-width: 300px;">
-                    Book New Ticket
-                </button>
-            </div>
-        </section>
     </main>
 
-    <!-- JavaScript file for interactive functionality -->
     <script src="script.js"></script>
 </body>
 </html>

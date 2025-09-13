@@ -1,18 +1,15 @@
-/* Reset default styles and set base font */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Base body styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Times New Roman';
     line-height: 1.6;
     color: #333;
 }
 
-/* Welcome page specific styles */
 .welcome-container {
     min-height: 100vh;
     background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3)), 
@@ -22,7 +19,6 @@ body {
     background-attachment: fixed;
 }
 
-/* Header styles for welcome page */
 .header {
     display: flex;
     justify-content: space-between;
@@ -32,20 +28,17 @@ body {
     backdrop-filter: blur(10px);
 }
 
-/* Logo styling */
 .logo h2 {
     color: white;
     font-size: 28px;
     font-weight: bold;
 }
 
-/* Header buttons container */
 .header-buttons {
     display: flex;
     gap: 15px;
 }
 
-/* Hero section taking full viewport */
 .hero-section {
     display: flex;
     align-items: center;
@@ -55,13 +48,11 @@ body {
     padding: 50px 20px;
 }
 
-/* Hero content styling */
 .hero-content {
     max-width: 800px;
     color: white;
 }
 
-/* Main title styling */
 .hero-title {
     font-size: 48px;
     font-weight: bold;
@@ -69,7 +60,6 @@ body {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
-/* Subtitle styling */
 .hero-subtitle {
     font-size: 18px;
     margin-bottom: 30px;
@@ -77,9 +67,8 @@ body {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
-/* Button styles - Primary button */
 .btn-primary, .btn-cta {
-    background: #ff6b35;
+    background: #f3348d;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -91,15 +80,13 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
-/* Button hover effect */
+/* 
 .btn-primary:hover, .btn-cta:hover {
     background: #e55a2b;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
+} */
 
-/* Secondary button styling */
 .btn-secondary {
     background: transparent;
     color: white;
@@ -111,19 +98,16 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Secondary button hover */
-.btn-secondary:hover {
+/* .btn-secondary:hover {
     background: white;
     color: #333;
-}
+} */
 
-/* Services preview section */
 .services-preview {
     padding: 80px 50px;
     background: rgba(255, 255, 255, 0.95);
 }
 
-/* Services container for grid layout */
 .services-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -132,7 +116,6 @@ body {
     margin: 0 auto;
 }
 
-/* Individual service card styling */
 .service-card {
     background: white;
     padding: 30px 20px;
@@ -143,40 +126,34 @@ body {
     border: 1px solid #f0f0f0;
 }
 
-/* Service card hover effect */
 .service-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
-/* Service card icon */
 .card-icon {
     font-size: 48px;
     margin-bottom: 15px;
 }
 
-/* Service card title */
 .service-card h3 {
     font-size: 20px;
     margin-bottom: 10px;
     color: #333;
 }
 
-/* Service card description */
 .service-card p {
     color: #666;
     font-size: 14px;
     line-height: 1.5;
 }
 
-/* Navigation bar for internal pages */
 .navbar {
     background: #2c3e50;
     padding: 15px 50px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* Navigation container */
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -185,7 +162,6 @@ body {
     margin: 0 auto;
 }
 
-/* Navigation logo */
 .nav-logo {
     color: white;
     font-size: 24px;
@@ -193,14 +169,12 @@ body {
     text-decoration: none;
 }
 
-/* Navigation links container */
 .nav-links {
     display: flex;
     list-style: none;
     gap: 30px;
 }
 
-/* Individual navigation link */
 .nav-links a {
     color: white;
     text-decoration: none;
@@ -210,13 +184,11 @@ body {
     border-radius: 5px;
 }
 
-/* Navigation link hover effect */
 .nav-links a:hover {
     color: #ff6b35;
     background: rgba(255, 107, 53, 0.1);
 }
 
-/* Main content container for internal pages */
 .main-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -224,7 +196,6 @@ body {
     min-height: 70vh;
 }
 
-/* Page title styling */
 .page-title {
     text-align: center;
     font-size: 36px;
@@ -232,7 +203,6 @@ body {
     margin-bottom: 30px;
 }
 
-/* Form container styling */
 .form-container {
     max-width: 500px;
     margin: 0 auto;
@@ -242,12 +212,10 @@ body {
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
-/* Form group styling */
 .form-group {
     margin-bottom: 20px;
 }
 
-/* Form labels */
 .form-group label {
     display: block;
     margin-bottom: 8px;
@@ -255,7 +223,6 @@ body {
     font-weight: bold;
 }
 
-/* Form inputs */
 .form-group input, .form-group select {
     width: 100%;
     padding: 12px 15px;
@@ -264,14 +231,10 @@ body {
     font-size: 16px;
     transition: border-color 0.3s ease;
 }
-
-/* Input focus effect */
 .form-group input:focus, .form-group select:focus {
     outline: none;
     border-color: #ff6b35;
 }
-
-/* Submit button styling */
 .btn-submit {
     width: 100%;
     background: #ff6b35;
@@ -283,13 +246,9 @@ body {
     cursor: pointer;
     transition: background 0.3s ease;
 }
-
-/* Submit button hover */
 .btn-submit:hover {
     background: #e55a2b;
 }
-
-/* Bookings history table */
 .bookings-table {
     width: 100%;
     border-collapse: collapse;
@@ -298,27 +257,19 @@ body {
     overflow: hidden;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
-
-/* Table header */
 .bookings-table th {
     background: #2c3e50;
     color: white;
     padding: 15px;
     text-align: left;
 }
-
-/* Table cells */
 .bookings-table td {
     padding: 15px;
     border-bottom: 1px solid #eee;
 }
-
-/* Table row hover effect */
 .bookings-table tr:hover {
     background: #f8f9fa;
 }
-
-/* Home page content sections */
 .content-section {
     margin-bottom: 50px;
     background: white;
@@ -326,16 +277,12 @@ body {
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
-
-/* Section headings */
 .section-title {
     font-size: 28px;
     color: #2c3e50;
     margin-bottom: 20px;
     text-align: center;
 }
-
-/* Section descriptions */
 .section-description {
     font-size: 16px;
     line-height: 1.8;
@@ -344,48 +291,38 @@ body {
     max-width: 800px;
     margin: 0 auto;
 }
-
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
-    /* Adjust header for mobile */
     .header {
         padding: 15px 20px;
         flex-direction: column;
         gap: 20px;
     }
     
-    /* Adjust hero title for mobile */
     .hero-title {
         font-size: 32px;
     }
     
-    /* Adjust hero subtitle for mobile */
     .hero-subtitle {
         font-size: 16px;
     }
     
-    /* Adjust services padding for mobile */
     .services-preview {
         padding: 40px 20px;
     }
     
-    /* Adjust navbar for mobile */
     .navbar {
         padding: 15px 20px;
     }
     
-    /* Stack navigation links vertically on mobile */
     .nav-links {
         flex-direction: column;
         gap: 10px;
     }
     
-    /* Adjust main content padding for mobile */
     .main-content {
         padding: 30px 20px;
     }
     
-    /* Adjust form container for mobile */
     .form-container {
         padding: 30px 20px;
         margin: 0 20px;
