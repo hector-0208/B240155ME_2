@@ -1,0 +1,5 @@
+1. For the colour pallete I went with these colours because
+    a) The navbar felt more cleaner and the text seemed to feel emphasised even with the simple white colour.
+    b) The buttons felt more "clickable" when using a darker colour such as orange instead of cyan or pink which I initially thought to use.
+2. For the font I didn't feel like I had much time to ponder upon, so I tried Times New Roman but it felt too stern, so I went with sans serif(serif for the smoother edges)
+3. The service cards were an idea that I remember seeing somewhere and one that I tried to replicate
